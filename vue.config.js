@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: '/f2e2019-week8-clouddrive/'
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/f2e2019-week8-clouddrive/'
+    : '/'
 }
